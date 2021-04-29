@@ -1,0 +1,111 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  width: 128px;
+  height: 128px;
+  overflow: visible;
+
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: grid;
+  width: 99%;
+  height: 99%;
+  grid-template-rows : 1fr 1fr 1fr;
+  grid-template-columns : 1fr 1fr 1fr;
+  align-items : center;
+  justify-items : stretch;
+  column-gap : 2px;
+  row-gap : 2px;
+
+}
+.images > img{
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+
+}
+.image-large {
+  transform: scale(2);
+  transition: transform 2s ease-in-out;
+}
+.image-extra-large {
+  transform: scaleX(5.2) scaleY(5.2);
+  transition: transform 0.5s ease-in-out;
+}
+.image-small {
+  transition: all 5s ease-in-out;
+}
+
+.image1 {
+  transform: translateX(133px) translateY(133px) scale(3.1,3.1);
+  z-index: 1;
+}
+
+
+.image2 {
+  transform: scaleX(3.1) translateY(132px) scaleY(3.1) ;
+}
+
+.image3 {
+  transform: scaleX(3.1)  translateX(-42px)  translateY(132px) scaleY(3.1)  ;
+}
+
+.image4 {
+  transform: scaleY(3.1) translateX(132px)  scaleX(3.1)    translateY(0px);
+}
+
+.image5 {
+  transform: scaleY(3.1) scaleX(3.1)  translateX(0px)     translateY(0px);
+}
+
+.image6 {
+  transform: scaleY(3.1) scaleX(3.1) translateX(-43px)      translateY(0px);
+  z-index: 0;
+}
+
+.image7 {
+  transform: scaleX(3.1) scaleY(3.1) translateX(43px)   translateY(-43px);
+}
+
+.image8 {
+  transform: scaleX(3.1)  scaleY(3.1) translateX(0px)     translateY(-43px);
+}
+
+.image9 {
+  transform: scaleY(3.1) scaleX(3.1)  translateX(-43px)     translateY(-43px);
+}
+
+
+
+#image1,#image2,#image3,#image4,#image5,#image6,#image7,#image8,#image9 {
+  transition: transform 0.6s ease-in-out;
+}
+#image1.large, #image2.large,#image3.large, #image4.large, #image5.large, #image6.large, #image7.large, #image8.large, #image9.large  {
+  transform: scale(2);
+}
+#image9.extra-large  {
+  transform: scaleX(6.2) scaleY(6.2);
+}
+#image1.small, #image2.small,#image3.small, #image4.small, #image5.small, #image6.small, #image7.small, #image8.small, #image9.small {}
